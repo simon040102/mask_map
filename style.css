@@ -49,8 +49,8 @@ table {
 
 .warp{
 	position: relative;
-  width:1200px;
-  height:5000px;
+	width: 100%;
+	height: 100%;
 }
 .left{
 	width: 470px;
@@ -105,9 +105,9 @@ table {
 
 .list{
 	overflow: scroll;
-	height: 800px;
+	height: 600px;
 }
-.list li{
+.list li  {
 	position: relative;
 	width: 200px;
 	height: 220px;
@@ -121,7 +121,7 @@ table {
 	border-left: 1px solid gray;
 	border-radius: 10px;
 }
-.list h2{
+.list a{
 	font-size: 22px;
 	line-height: 40px;
 }
@@ -129,6 +129,27 @@ table {
 	font-size: 12px;
 	line-height: 20px;
 }
+.leaflet-popup-content{
+	position: relative;
+	width: 400px;
+	height: 220px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	margin-left: 20px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: white;
+	margin: 0 !important;
+}
+.leaflet-popup-content h2{
+	font-size: 22px;
+	line-height: 22px;
+}
+.leaflet-popup-content p{
+	font-size: 12px;
+	line-height: 12px;
+}
+
 .mask{
 	margin-top: 20px;
 	font-size: 14px;
@@ -163,3 +184,41 @@ html,body{
     top:0;
     
 }
+.marker-cluster-small {
+	background-color: rgba(181, 226, 140, 0.6);
+	}
+.marker-cluster-small div {
+	background-color: rgba(110, 204, 57, 0.6);
+	}
+
+.marker-cluster-medium {
+	background-color: rgba(241, 211, 87, 0.6);
+	}
+.marker-cluster-medium div {
+	background-color: rgba(240, 194, 12, 0.6);
+	}
+
+.marker-cluster-large {
+	background-color: rgba(253, 156, 115, 0.6);
+	}
+.marker-cluster-large div {
+	background-color: rgba(241, 128, 23, 0.6);
+	}
+
+.marker-cluster {
+	background-clip: padding-box;
+	border-radius: 20px;
+	}
+.marker-cluster div {
+	width: 30px;
+	height: 30px;
+	margin-left: 5px;
+	margin-top: 5px;
+
+	text-align: center;
+	border-radius: 15px;
+	font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+	}
+.marker-cluster span {
+	line-height: 30px;
+	}

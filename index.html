@@ -2,50 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>口罩資訊</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>口罩資訊</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <!-- 口罩群組ＣＳＳ -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css" />
+  <!-- 口罩群組ＣＳＳ -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-    
-    <div class="warp">
-       <div id="map"></div>
-      <div class="left">
-        <div class="time">
-          <div>
-            <h2>星期<span class="week"></span></h2>
-          </div>
-          <div class="date"></div>
-        </div>
-        <img class="upDown" src="https://img.icons8.com/color/48/000000/align-justify.png" onclick="test(this)">
-        <!--this 指 img 物件 -->
-        <div class="choose">
-          <div class="_select">
-            <select name="選擇縣市" class="select">
-              <option value="請選擇地區">請選擇地區</option>
-            </select>
-          </div>
-          <div class="_area">
-            <select name="選擇區域" class="area">
-            </select>
-          </div>
-        </div>
-        <div id="div2">
-          <div>
-            <ul class="list"></ul>
-          </div>
-        </div>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <div id="map"></div>
+  <div class="left">
+    <div class="time">
+      <div>
+        <h2>星期<span class="week"></span></h2>
+      </div>
+      <div class="date"></div>
+    </div>
+    <img class="upDown" src="https://img.icons8.com/color/48/000000/align-justify.png" onclick="test(this)">
+    <!--this 指 img 物件 -->
+    <div class="choose">
+      <div class="_select">
+        <select name="選擇縣市" class="select">
+          <option value="請選擇地區">請選擇地區</option>
+        </select>
+      </div>
+      <div class="_area">
+        <select name="選擇區域" class="area">
+        </select>
       </div>
     </div>
+    <div id="div2">
+      <div>
+        <ul class="list"></ul>
+      </div>
     </div>
-    
+  </div>
+  </div>
+  </div>
+  <!-- 口罩群組js -->
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <!-- 口罩群組js -->
+  <script src="all.js"></script>
 </body>
 
 </html>
-<script src="all.js"></script>
